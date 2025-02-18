@@ -1,8 +1,15 @@
 <script setup lang="ts">
+  import AppNavbar from './components/AppNavbar.vue'
+  import Hero from './components/AppHero.vue'
+  import HomeCards from './components/HomeCards.vue'
+  import JobListings from './components/JobListings.vue';
 </script>
 
 <template>
-  <h1 class="">Jobs App</h1>
+  <AppNavbar />
+  <Hero />
+  <HomeCards />
+  <JobListings :limit="3" :showButton="true" />
 </template>
 
 <style scoped>
